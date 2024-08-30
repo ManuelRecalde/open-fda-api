@@ -1,5 +1,4 @@
 import { Container, Box, Typography, } from "@mui/material"
-import logo from '../assets/LogoJaraxa.svg'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import MenuPersonal from './MenuPersonal'
@@ -12,7 +11,7 @@ export default function Header() {
 
   return (
     <>
-        <Container maxWidth='100%' sx={{
+        <Container maxWidth='80%' sx={{
             width:'100%',
             marginBottom:'48px',
             padding:0,
@@ -28,16 +27,11 @@ export default function Header() {
                     display={"flex"}
                     gap={4}
                 >
-                    <Box
-                        component="img"
-                        alt="Logo"
-                        src={logo}
-                        width='80px'
-                    />
+                
 
                     <Box padding={'32px 0' }>
                         <Typography variant="h6" component="h2" sx={{fontSize: responsive ? '14px' : '18px', fontWeight:600, color:'white'}}>
-                            Desafío Jaraxa - Desarrollador Front End
+                            Open FDA API
                         </Typography>
                         
                     </Box>
